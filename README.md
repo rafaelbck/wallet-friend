@@ -2,6 +2,8 @@
 
 **Autor:** Rafael Becker Maciel
 
+**mockup telas**: https://stitch.withgoogle.com/projects/8995139334762514003
+
 Aplicação web de controle financeiro pessoal que permite ao usuário registrar seus gastos, organizá-los em categorias personalizadas e acompanhar sua saúde financeira por meio de um dashboard interativo. O diferencial da aplicação está na visualização inteligente dos dados, com gráficos e indicadores que ajudam o usuário a entender seus padrões de consumo e tomar melhores decisões financeiras.
 
 O frontend foi desenvolvido com **HTML, Bootstrap e JavaScript**, e o backend foi simulado com uma **API** utilizando o **JSON Server**.
