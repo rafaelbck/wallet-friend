@@ -35,8 +35,11 @@ erDiagram
         string categoriaId FK
         string descricao
         float valor
+        float valorDolar
+        float cotacaoDolar
         string data
         string tipo
+        boolean internacional
     }
 ```
 
@@ -67,10 +70,23 @@ Breve explicação das tabelas principais:
   * `valor`: Sempre um número positivo (Float). Representa o valor da despesa.
   * `data`: Data em que o gasto foi realizado, no formato `YYYY-MM-DD`.
   * `tipo`: Aceita apenas os valores `"FIXO"` ou `"VARIAVEL"`, permitindo análises de padrão de consumo.
+  * `internacional`: Boolean que indica se o gasto foi uma compra internacional (em dólar).
+  * `valorDolar`: Valor original da compra em dólar (Float). Preenchido apenas quando `internacional` for `true`.
+  * `cotacaoDolar`: Cotação do dólar no momento do registro, obtida via AwesomeAPI. Armazenada para fins de histórico.
 
 ---
 
-## 3. Rotas da API (JSON Server)
+## 3. API Pública (AwesomeAPI - Cotação do Dólar)
+
+A aplicação consome a API pública da AwesomeAPI para obter a cotação do dólar em tempo real no momento do registro de compras internacionais.
+
+- **Endpoint:** `GET https://economia.awesomeapi.com.br/last/USD-BRL`
+- **Uso:** Chamada realizada quando o usuário marca um gasto como internacional. O valor retornado em `bid` (preço de compra) é usado para converter o valor em dólar para reais, e ambos são salvos no gasto.
+- **Tratamento de erro:** Caso a API esteja indisponível, o usuário é notificado e pode inserir a cotação manualmente.
+
+---
+
+## 4. Rotas da API (JSON Server)
 
 A aplicação consome a API local simulada pelo JSON Server. Abaixo os principais endpoints:
 

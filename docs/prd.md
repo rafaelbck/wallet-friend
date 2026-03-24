@@ -51,3 +51,8 @@ Abaixo estão as funcionalidades principais do MVP (Minimum Viable Product), esc
 - **US12 - Gráfico por Categoria:** Como um Usuário Autenticado, quero visualizar um gráfico com a distribuição dos meus gastos por categoria, para entender onde estou gastando mais.
 - **US13 - Comparativo entre Meses:** Como um Usuário Autenticado, quero visualizar um gráfico comparando meus gastos dos últimos meses, para identificar tendências no meu comportamento financeiro.
 - **US14 - Maior Gasto do Mês:** Como um Usuário Autenticado, quero ver em destaque qual foi meu maior gasto do mês, para saber qual despesa mais pesou no meu orçamento.
+
+### 🌍 Épico 5: Compras Internacionais
+
+- **US15 - Registrar Gasto Internacional:** Como um Usuário Autenticado, quero marcar um gasto como internacional e informar o valor em dólar, para que o sistema busque a cotação atual via API e converta automaticamente o valor para reais.
+- **US16 - Visualizar Cotação do Dólar:** Como um Usuário Autenticado, quero ver a cotação do dólar utilizada no momento do registro do gasto, para ter transparência sobre o valor convertido.
