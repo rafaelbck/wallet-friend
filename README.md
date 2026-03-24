@@ -2,7 +2,7 @@
 
 **Autor:** Rafael Becker Maciel
 
-**mockup telas**: https://stitch.withgoogle.com/projects/8995139334762514003
+**Design System & Tokens**: https://stitch.withgoogle.com/projects/8995139334762514003
 
 Aplicação web de controle financeiro pessoal que permite ao usuário registrar seus gastos, organizá-los em categorias personalizadas e acompanhar sua saúde financeira por meio de um dashboard interativo. O diferencial da aplicação está na visualização inteligente dos dados, com gráficos e indicadores que ajudam o usuário a entender seus padrões de consumo e tomar melhores decisões financeiras.
 
@@ -32,7 +32,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 ### RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
 
-- [ ] **ID 01** - Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design tradicionais (Figma, Quant UX ou Sketch) ou IA (Stitch).
+- [X] **ID 01** - Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design tradicionais (Figma, Quant UX ou Sketch) ou IA (Stitch).
 - [ ] **ID 02** - Implementa layout responsivo com Framework CSS (Bootstrap, Materialize, Tailwind + DaisyUI) usando Flexbox ou Grid do próprio framework.
 - [ ] **ID 03** - Implementa layout responsivo com CSS puro, usando Flexbox ou Grid Layout.
 - [ ] **ID 04** - Utiliza componentes prontos de um Framework CSS (ex.: card, button) e componentes JavaScript do framework (ex.: modal, carousel).

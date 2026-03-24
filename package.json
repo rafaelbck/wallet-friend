@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass css/styles.scss css/styles.css --watch",
+    "server": "json-server db.json"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/rafaelbck/wallet-friend/issues"
   },
-  "homepage": "https://github.com/rafaelbck/wallet-friend#readme"
+  "homepage": "https://github.com/rafaelbck/wallet-friend#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "json-server": "^1.0.0-beta.15",
+    "sass": "^1.98.0"
+  }
 }
